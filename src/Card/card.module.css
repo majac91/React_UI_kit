@@ -1,15 +1,15 @@
-.wrapper {
+.outter {
   padding: 25px;
   margin: auto;
   max-width: 500px;
 }
 
-.card {
+.inner {
   background-color: white;
   padding: 32px;
   border-radius: 8px;
 }
 
-text {
+.text {
   margin-bottom: 16px;
 }
