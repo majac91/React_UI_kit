@@ -3,8 +3,8 @@ import card from "./card.module.css";
 
 const Card = ({ children }) => {
   return (
-    <div className={card.wrapper}>
-      <div className={card.card}>
+    <div className={card.outter}>
+      <div className={card.inner}>
         <p className={card.text}>{children}</p>
       </div>
     </div>
