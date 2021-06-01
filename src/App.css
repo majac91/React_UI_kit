@@ -1,4 +1,12 @@
 body {
   background: #222;
   box-sizing: border-box;
+  width: 100vw;
+}
+
+.heading {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
 }

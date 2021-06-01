@@ -1,14 +1,20 @@
 import "./App.css";
 import Card from "./Card/Card";
 import FullBleedImgCard from "./FullBleedImgCard/FullBleedImgCard";
+import ShoppingCart from "./ShoppingCart/components/StoreFront";
+import Modal from "./Modal/Modal";
+import Form from "./Modal/Form";
 function App() {
   return (
     <div className="App">
+      <h2 className="heading">Responsive card</h2>
+
       <Card>
         Otters have long, slim bodies and relatively short limbs. Their most
         striking anatomical features are the powerful webbed feet used to swim,
         and their seal-like abilities holding breath underwater.
       </Card>
+      <h2 className="heading">Full-bleed image card</h2>
       <FullBleedImgCard
         p1="Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are the powerful webbed feet used to swim, and their seal-like abilities holding breath underwater.
         Otters are carnivorous mammals in the subfamily Lutrinae. The 13 extant otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. Lutrinae is a branch of the Mustelidae family, which also includes weasels, badgers, mink, and wolverines, among other animals."
@@ -18,6 +24,12 @@ function App() {
         alt="otter"
         src="https://images.unsplash.com/photo-1571488839518-864e5b7447e6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG90dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
       ></FullBleedImgCard>
+      <h2 className="heading">Shopping list app</h2>
+      <ShoppingCart />
+      <h2 className="heading">Acessible modal</h2>
+      <Modal title="Contact us">
+        <Form></Form>
+      </Modal>
     </div>
   );
 }
